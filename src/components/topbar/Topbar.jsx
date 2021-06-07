@@ -4,6 +4,7 @@ import { NotificationsActiveOutlined, LanguageOutlined, Settings,MenuOpenOutline
 import Sidebar from '../sidebar/Sidebar'
 
 import { Drawer } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 export default function Topbar() {
   const [drawer, setdrawer] = useState(false);
@@ -18,7 +19,9 @@ export default function Topbar() {
           <Sidebar />
         </Drawer>
         <div className="topLeft">
-          <span className="logo">Material-Ui Admin</span>
+          <Link to='/' >
+            <span className="logo">Admin Dashboard</span>
+          </Link>
         </div>
         <div className="topRight">
           <div className="topbarIconWrapper">

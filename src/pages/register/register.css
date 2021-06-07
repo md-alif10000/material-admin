@@ -1,0 +1,17 @@
+.register{
+    margin: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+.registerWrapper{
+      max-width: 900px;
+     padding: 20px;
+     background-color: rgb(212, 223, 233);
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+/* Other css is loding from newUser.css file */

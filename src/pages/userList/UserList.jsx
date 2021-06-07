@@ -4,6 +4,7 @@ import { DeleteForeverOutlined } from "@material-ui/icons";
 import { DataGrid } from "@material-ui/data-grid";
 import { userTableRow } from "../../dummyData";
 import { Link } from "react-router-dom";
+import Sidebar from "../../components/sidebar/Sidebar";
 
 
 
@@ -64,21 +65,26 @@ export default function UserList() {
   ];
 
   return (
-    <div className="userList">
-      <div className="userTitleContainer">
-        <h1 className="userTitle">All Users</h1>
-        <Link to="/newuser">
-          <button className="userAddButton">Create</button>
-        </Link>
+    <div className="container">
+      <div className="sidebarContainer">
+        <Sidebar />
       </div>
-      <div style={{ height: 800, width: "100%" }}>
-        <DataGrid
-          rows={data}
-          disableSelectionOnClick
-          columns={columns}
-          pageSize={15}
-          checkboxSelection
-        />
+      <div className="userList">
+        <div className="userTitleContainer">
+          <h1 className="userTitle">All Users</h1>
+          <Link to="/newuser">
+            <button className="userAddButton">Create</button>
+          </Link>
+        </div>
+        <div style={{ height: 800, width: "100%" }}>
+          <DataGrid
+            rows={data}
+            disableSelectionOnClick
+            columns={columns}
+            pageSize={15}
+            checkboxSelection
+          />
+        </div>
       </div>
     </div>
   );

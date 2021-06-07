@@ -2,12 +2,16 @@
   display: flex;
   margin-top: 10px;
 }
-.sidebarContainer{
-    flex: 1;
-}
+
 @media screen and (max-width: 900px) {
+  .container:first-child{
+    /* display: none; */
+  }
  
   .sidebarContainer{
       display: none;
   }
+}
+.sidebarContainer{
+  flex: 1;
 }

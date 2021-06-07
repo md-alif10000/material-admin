@@ -1,5 +1,6 @@
 import Chart from '../../components/chart/Chart'
 import FeaturedInfo from '../../components/featuredinfo/Featuredinfo'
+import Sidebar from '../../components/sidebar/Sidebar'
 import WidgetLg from '../../components/widgetLg/WidgetLg'
 import WidgetSm from '../../components/widgetSm/WidgetSm'
 import { userData } from '../../dummyData'
@@ -8,7 +9,12 @@ import './home.css'
 
 
 export default function Home() {
-    return (
+  return (
+    <div className="container">
+      <div className="sidebarContainer">
+        <Sidebar />
+      </div>
+
       <div className="home">
         <FeaturedInfo />
         <Chart
@@ -20,8 +26,9 @@ export default function Home() {
         />
         <div className="homeWidgets">
           <WidgetSm />
-          <WidgetLg/>
+          <WidgetLg />
         </div>
       </div>
-    );
+    </div>
+  );
 }
