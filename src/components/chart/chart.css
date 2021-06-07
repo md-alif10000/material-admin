@@ -1,0 +1,13 @@
+.chart{
+margin: 20px;
+padding: 20px;
+
+
+        -webkit-box-shadow: 5px 3px 17px 2px #000000; 
+box-shadow: 5px 3px 17px 2px #000000;
+}
+
+.chartTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
